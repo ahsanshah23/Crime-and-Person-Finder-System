@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+ 
+  <title>Home Page</title>
+  
+
+      <link rel="stylesheet" href="13.css">
+      
+      <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+          apiKey: "AIzaSyB5uOq7OWig-BAl_8U0gf7hX-FaJS88jqE",
+          authDomain: "crime-e5797.firebaseapp.com",
+          databaseURL: "https://crime-e5797.firebaseio.com",
+          projectId: "crime-e5797",
+          storageBucket: "crime-e5797.appspot.com",
+          messagingSenderId: "844827849060"
+      };
+      firebase.initializeApp(config);
+      </script>
+      <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+        
+        
+        <script>
+        firebase.auth().signInAnonymously().catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+  });
+  </script>
+  
+</head>
+
+<body>
+  
+ <a href="anonymouscrimeview.html" class="rainbow-button" alt=" View Crime"></a> 
+  
+ <a href="anonymousmissingpersonview.html" class="rainbow-button" alt="View Missing Persons"></a>
+
+  
+</body>
+
+</html>

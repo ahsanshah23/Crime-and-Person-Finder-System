@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style 
+<style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  
+  box-sizing: border-box;
+  
+  text-rendering: optimizeLegibility;
+  margin-left:0px;
+  
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: #777;
+  background: #4CAF50;
+  margin-left:0px;
+}
+
+.container {
+  width: 25%;
+  position: relative;
+  margin-left:80px;
+  margin-top:70px;
+  padding:40px;
+  background: white;
+  float:left;
+}
+
+.image{
+  margin-top:40px;
+  width:50%;
+  float:right;
+  
+}
+
+
+h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  color: black;
+}
+
+h4 {
+ 
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: black;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+
+
+
+.submit1{
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+.submit1:hover{
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submit1:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.submit2{
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: gray;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+.submit2:hover{
+  background: black;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submit2:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+  
+			.topnav {
+			background-color: #191919;
+			overflow: hidden;
+			}
+
+			/* Style the links inside the navigation bar */
+			.topnav a {
+			float:RIGHT;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			}
+
+			/* Change the color of links on hover */
+			.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+			}
+
+			/* Add an active class to highlight the current page */
+			.active {
+			background-color: #4CAF50;
+			color: white;
+			}
+			
+			.align-right {
+			text-align: right;
+			}
+
+			/* Hide the link that should open and close the topnav on small screens */
+			.topnav .icon {
+			display: none;
+			}
+		
+        body {
+        
+        background-color:#191919;
+
+        
+      }
+        
+    
+
+      img {
+        display: block;
+        /*margin-left: 800px;*/
+        float:left;
+        /*margin-top: 245px;*/
+      }
+
+      .img1 {
+        display: block;
+        margin-left: 500px;
+        margin-top: 50px;
+      }
+      
+      p{
+        color: white;
+        font-size: 30px;
+       margin-right:40px;
+        font-family:"Trebuchet MS", Helvetica, sans-serif;
+      }
+      
+      .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+      
+</style>
+</head>
+<body>
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB5uOq7OWig-BAl_8U0gf7hX-FaJS88jqE",
+    authDomain: "crime-e5797.firebaseapp.com",
+    databaseURL: "https://crime-e5797.firebaseio.com",
+    projectId: "crime-e5797",
+    storageBucket: "crime-e5797.appspot.com",
+    messagingSenderId: "844827849060"
+  };
+  firebase.initializeApp(config);
+</script>
+ <div class="row">
+<div class="topnav" id="myTopnav">
+			
+			
+			<a href="anonymouscrimeview.html">ANONYMOUS</a>
+      <a href="adminlogin.html">ADMIN</a>
+      <a href="userlogin.html" >USER</a>
+      <a href="home.html" class="active">HOME</a>
+      <p> Crime Reporter And Missing Person Finding App </p>
+		</div>
+    
+    <div class="container">  
+  
+    <h3>Registration Form</h3>
+    <h4>Fill the form to register</h4>
+    
+    <fieldset>
+      <input placeholder="Type your Email Address" type="text" id="email" tabindex="2" required>
+    </fieldset>
+    
+    <fieldset>
+      <input placeholder="Type your password" type="password" id="Password" tabindex="4" required>
+    </fieldset>
+  
+  
+        <button class="submit1" onclick="register()" >Register</button>
+      <input class="submit2" onclick="window.location.href = 'userlogin.html'" type="button" value="Sign In" />
+
+
+</div>
+
+
+<div class="image">
+  
+<img src="home.png" align="center" style="width:70%;">
+</div>
+</div>
+
+ <script src="register.js"></script>
+</body>
+</html>
